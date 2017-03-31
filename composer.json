@@ -1,0 +1,34 @@
+{
+    "name": "mindy/geo-bundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "yandex/geo": "^1.1",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "suggest": {
+        "mindy/admin-bundle": "The Administrator panel for Mindy Framework"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mindy\\Bundle\\GeoBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mindy\\Bundle\\GeoBundle\\Tests\\": "./Tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.2-dev"
+        }
+    }
+}
